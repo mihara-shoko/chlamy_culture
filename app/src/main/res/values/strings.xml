@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ChlamyCulture</string>
+    <string name="score">score</string>
+    <string name="equal">=</string>
+    <string name="culture_green_algae">Culture Green Algae</string>
+    <string name="collect_nutrients_and_increase_cell_number">Collect Nutrients and Increase Cell Number</string>
+    <string name="equal">=</string>
+    <string name="_3">×3 +</string>
+    <string name="_2">×2 +</string>
+    <string name="_1">×1 +</string>
+    <string name="__1">×1</string>
+    <string name="toxin_dead_game_over">: Toxin → Dead (GAME OVER)</string>
+    <string name="change_direction">: Change Direction</string>
+    <string name="reversible">↔</string>
+    <string name="light_off_tap_light_on">Light Off → Tap → Light On</string>
+    <string name="positive_direction">Positive Direction :</string>
+    <string name="right_arrow">↝</string>
+    <string name="negative_direction">Negative Direction :</string>
+    <string name="left_arrow">↜</string>
+    <string name="start">Start</string>
+</resources>

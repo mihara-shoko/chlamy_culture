@@ -1,0 +1,2 @@
+rootProject.name='ChlamyCulture'
+include ':app'

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/score"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/light_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/light_top"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:rotation="180"
+        android:src="@drawable/light_on"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/light_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:rotation="90"
+        android:src="@drawable/light_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        app:layout_constraintBottom_toTopOf="@+id/light_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/light_right"
+        app:layout_constraintStart_toEndOf="@+id/light_left"
+        app:layout_constraintTop_toBottomOf="@+id/light_top">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Tap to Start"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/carbon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/carbon" />
+
+        <ImageView
+            android:id="@+id/carbon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/carbon" />
+
+        <ImageView
+            android:id="@+id/nitrogen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/nitrogen" />
+
+        <ImageView
+            android:id="@+id/nitrogen2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/nitrogen" />
+
+        <ImageView
+            android:id="@+id/phosphorus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phosphorus" />
+
+        <ImageView
+            android:id="@+id/calcium"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/calcium" />
+
+        <ImageView
+            android:id="@+id/toxin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toxin" />
+
+        <ImageView
+            android:id="@+id/toxin2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toxin" />
+
+        <ImageView
+            android:id="@+id/toxin3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toxin" />
+
+        <ImageView
+            android:id="@+id/toxin4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/toxin" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/chlamy"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chlamy" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/light_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:rotation="-90"
+        android:src="@drawable/light_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/light_bottom"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/light_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
