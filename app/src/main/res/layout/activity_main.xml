@@ -17,7 +17,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="40dp"
         android:text="@string/score"
-        android:textSize="25sp"
+        android:textSize="22dp"
         app:layout_constraintBottom_toTopOf="@+id/light_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/light_top"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:rotation="180"
@@ -41,8 +41,8 @@
 
     <ImageView
         android:id="@+id/light_left"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:rotation="90"
@@ -56,6 +56,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="top"
+        android:background="@drawable/frameline"
         app:layout_constraintBottom_toTopOf="@+id/light_bottom"
         app:layout_constraintEnd_toStartOf="@+id/light_right"
         app:layout_constraintStart_toEndOf="@+id/light_left"
@@ -67,7 +68,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:text="Tap to Start"
-            android:textSize="25sp" />
+            android:textSize="25dp" />
 
         <ImageView
             android:id="@+id/carbon"
@@ -151,8 +152,8 @@
 
     <ImageView
         android:id="@+id/light_right"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:rotation="-90"
@@ -163,8 +164,8 @@
 
     <ImageView
         android:id="@+id/light_bottom"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="15dp"
         android:src="@drawable/light_off"

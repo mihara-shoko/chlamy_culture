@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         star.setY(starY = -500.0f);
         star2.setY(starY2 = -500.0f);
         scoreLabel.setText("C = " + carbonScore + ", N = " + nitrogenScore +
-                ", P = " + phosphorusScore + ", Ca = " + calciumScore);
+                ", P = " + phosphorusScore + ", Ca = " + calciumScore + " ⇒ 0 cells");
 
 
 
@@ -201,8 +202,12 @@ public class MainActivity extends AppCompatActivity {
                             public void run(){
                                 chlamyPos();
                                 hitCheck();
+                                int[] elements = {carbonScore / 3, nitrogenScore / 2, phosphorusScore, calciumScore};
+                                Arrays.sort(elements);
+                                int cellNumber = elements[0];
                                 scoreLabel.setText("C = " + carbonScore + ", N = " + nitrogenScore +
-                                        ", P = " + phosphorusScore + ", Ca = " + calciumScore);
+                                        ", P = " + phosphorusScore + ", Ca = " + calciumScore +
+                                        " ⇒ " + cellNumber + " cells");
 
                             }
                         });
@@ -275,6 +280,7 @@ public class MainActivity extends AppCompatActivity {
 
         chlamyWidth = chlamy.getWidth();
         chlamyHeight = chlamy.getHeight();
+
 
         // chlamy
         switch (direction){
