@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="top"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="40dp"
         android:text="@string/score"
-        android:textSize="22dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/light_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
