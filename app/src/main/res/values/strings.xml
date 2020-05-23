@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ChlamyCulture</string>
+    <string name="app_name">Algae Culture</string>
     <string name="score">score</string>
     <string name="equal">=</string>
     <string name="culture_green_algae">Culture Green Algae</string>
